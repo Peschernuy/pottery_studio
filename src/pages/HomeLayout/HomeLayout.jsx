@@ -1,10 +1,14 @@
-import './homeLayout.scss'
-
+import "./homeLayout.scss";
+import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
   return (
-    <div>HomeLayout</div>
-  )
-}
+    <>
+      <h1>Home layout</h1>
+      <nav>Pottery Studio</nav>
+      <Outlet />
+    </>
+  );
+};
 
-export default HomeLayout
+export default HomeLayout;

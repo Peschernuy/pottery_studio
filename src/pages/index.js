@@ -11,4 +11,5 @@ export { default as Orders } from "./Orders/Orders";
 export { default as Products } from "./Products/Products";
 export { default as Register } from "./Register/Register";
 export { default as Shop } from "./Shop/Shop";
-export { default as SingleProducts } from "./SingleProducts/SingleProducts";
+export { default as SingleProduct } from "./SingleProduct/SingleProduct";
+export { default as Checkout } from "./Checkout/Checkout";
