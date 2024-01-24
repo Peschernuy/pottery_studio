@@ -1,11 +1,24 @@
-import './landing.scss'
-
-
+import {
+  Home,
+  About,
+  Shop,
+  BookClasses,
+  OpenHours,
+  Contacts,
+} from "../../components";
+import "./landing.scss";
 
 const Landing = () => {
   return (
-    <div>Landing</div>
-  )
-}
+    <>
+      <Home />
+      <About />
+      <Shop />
+      <BookClasses />
+      <OpenHours />
+      <Contacts />
+    </>
+  );
+};
 
-export default Landing
+export default Landing;

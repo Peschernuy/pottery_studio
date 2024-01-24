@@ -1,19 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
-  About,
-  BookClasses,
   Cart,
-  Contacts,
   Checkout,
   Error,
   HomeLayout,
   Landing,
   Login,
-  OpenHours,
   Orders,
   Products,
   Register,
-  Shop,
   SingleProduct,
 } from "./pages";
 
@@ -38,10 +33,6 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
-      },
-      {
-        path: "about",
-        element: <About />,
       },
       {
         path: "checkout",

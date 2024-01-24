@@ -1,3 +1,9 @@
+export { default as About } from "./About/About";
+export { default as BookClasses } from "./BookClasses/BookClasses";
 export { default as Footer } from "./Footer/Footer";
 export { default as Header } from "./Header/Header";
+export { default as Home } from "./Home/Home";
 export { default as Loading } from "./Loading/Loading";
+export { default as Contacts } from "./Contacts/Contacts";
+export { default as OpenHours } from "./OpenHours/OpenHours";
+export { default as Shop } from "./Shop/Shop";
