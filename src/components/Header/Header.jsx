@@ -1,8 +1,8 @@
 import './header.scss';
-import logoHeader from './logo_header.svg';
-import btnlogin from './btn_login.svg';
-import btnSearch from './btn_search.svg';
-import btnBascet from './btn_basket.svg';
+import logoHeader from '../../assets/images/header/logo_header.svg';
+import btnlogin from '../../assets/images/header/btn_login.svg';
+import btnSearch from '../../assets/images/header/btn_search.svg';
+import btnBascet from '../../assets/images/header/btn_basket.svg';
 import Navbar from './Navbar/Navbar';
 import { Link } from 'react-router-dom';
 
