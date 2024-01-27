@@ -16,14 +16,22 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-        font: 400 14px/18px Arial, Helvetica, sans-serif;
-        color: #fff;
+        font: 400 14px/18px $font-primary;
+        color: $white;
         .footer__nav__hrefs {
             display: flex;
             height: 100%;
             flex-direction: column;
             justify-content: space-between;
-            height: 100%;
+
+            a {
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            a:hover {
+                color: $background_2;
+            }
         }
 
         .footer__logo {
