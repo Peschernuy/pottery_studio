@@ -1,16 +1,38 @@
 import React from 'react';
 import './Navbar.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const location = useLocation();
+
     return (
         <nav className="navbar">
-            <Link to="/">HOME</Link>
-            <Link to="/">ABOUT</Link>
-            <Link to="/">SHOP</Link>
-            <Link to="/">BOOK CLASSES</Link>
-            <Link to="/">OPEN HOURS</Link>
-            <Link to="/">CONTACTS</Link>
+            <div>
+                <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                    HOME
+                </Link>
+                <span className={location.pathname === '/' ? 'w-full' : ''}></span>
+            </div>
+            <div>
+                <Link to="/">ABOUT</Link>
+                <span className={location.pathname === '' && 'w-full'}></span>
+            </div>
+            <div>
+                <Link to="/">SHOP</Link>
+                <span className={location.pathname === '' && 'w-full'}></span>
+            </div>
+            <div>
+                <Link to="/">BOOK CLASSES</Link>
+                <span className={location.pathname === '' && 'w-full'}></span>
+            </div>
+            <div>
+                <Link to="/">OPEN HOURS</Link>
+                <span className={location.pathname === '' && 'w-full'}></span>
+            </div>
+            <div>
+                <Link to="/">CONTACTS</Link>
+                <span className={location.pathname === '' && 'w-full'}></span>
+            </div>
         </nav>
     );
 };
