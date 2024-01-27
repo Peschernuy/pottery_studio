@@ -1,3 +1,5 @@
+@import './../../../styles/variables';
+
 .navbar {
     width: 618px;
     display: flex;
@@ -12,31 +14,31 @@
         span {
             transition: all 0.1s ease;
             height: 1px;
-            background-color: black;
+            background-color: $black;
         }
 
         a {
             text-decoration: none;
-            color: #000000;
-            font-weight: 400;
+            color: $black;
+            font-weight: $body-fw;
             font-size: 12px;
             font-family: Arial, Helvetica, sans-serif;
             transition: all 0.1s ease;
         }
 
         a:hover {
-            color: #454545;
+            color: $grey_dark;
         }
 
         .active {
-            font-weight: 700;
-            color: #000;
+            font-weight: $head-b-fw;
+            color: $black;
             cursor: auto;
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $max-width-tablet) {
     .navbar {
         display: none;
     }
