@@ -9,7 +9,7 @@ const Error = () => {
       <main className="error__main">
         <div className="error__container">
           <h1 className="error__title">404</h1>
-          <h3 className="error__text">Oops, something went wrong...</h3>
+          <h3 className="error__text">Oops, something went wrong.....</h3>
           <Link className="error__link" to="/">
             home page
           </Link>
