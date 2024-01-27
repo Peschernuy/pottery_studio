@@ -1,0 +1,45 @@
+header {
+    background: #e8e8e8ff;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    width: 1280px;
+    height: 88px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    gap: 150px;
+    padding: 0 100px;
+}
+
+.header__logo {
+    img {
+        cursor: pointer;
+    }
+}
+
+.header__btn {
+    display: flex;
+    justify-content: end;
+}
+
+.header__btn img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1228px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        gap: 0;
+    }
+}
