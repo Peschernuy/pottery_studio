@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./styles/styles.scss";
 import {
   Cart,
   Checkout,
@@ -9,6 +10,7 @@ import {
   Orders,
   Products,
   Register,
+  Reset,
   SingleProduct,
 } from "./pages";
 
@@ -52,6 +54,11 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/reset",
+    element: <Reset />,
     errorElement: <Error />,
   },
 ]);

@@ -1,0 +1,15 @@
+@import "_variables.scss";
+@import "_reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+
+body {
+  font-family: $font-primary;
+  background-color: $white;
+  color: $black;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
