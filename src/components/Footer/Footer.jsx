@@ -9,11 +9,11 @@ const Footer = () => {
         <footer className="footer ">
             <div className="footer__content">
                 <div className="footer__nav__hrefs">
-                    <div>About</div>
-                    <div>Shop</div>
-                    <div>Book classes</div>
-                    <div>Open hours</div>
-                    <div>Contacts</div>
+                    <a>About</a>
+                    <a>Shop</a>
+                    <a>Book classes</a>
+                    <a>Open hours</a>
+                    <a>Contacts</a>
                 </div>
                 <div className="footer__logo">
                     <img src={logo} alt="" />
