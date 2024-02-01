@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+
+.home {
+    display: grid;
+    grid-template-columns: 4.5fr 5.5fr;
+    width: $desktop-width;
+    margin: 0 auto;
+    font-family: $font-primary;
+    gap: 32px;
+
+    .home__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 45px;
+        padding-left: 91px;
+
+        .home__title {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            height: 242px;
+
+            .home__our__classes {
+                font-weight: $body-fw;
+                font-size: 14px;
+                font-style: italic;
+                color: $black;
+                display: flex;
+                justify-content: end;
+
+                div {
+                    width: 158px;
+                }
+            }
+
+            .home__explore {
+                font-weight: $body-fw;
+                font-size: $title_big;
+                color: $brown_dark;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+        }
+        .home__body {
+            height: 248px;
+            display: flex;
+            justify-content: space-between;
+
+            .home__item {
+                width: 158px;
+                font-size: 14px;
+                font-family: $font-secondary;
+                font-style: italic;
+                color: $black;
+                img {
+                    height: 196px;
+                    width: 158px;
+                }
+            }
+
+            .home__go__to__shop {
+                width: 252px;
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+
+                .home__go__to__shop__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    color: $black;
+                    font-size: $subtitle;
+                    font-family: $font-primary;
+
+                    .home__link {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 48px;
+                        border: 1px solid $stroke;
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                    }
+
+                    .home__link:hover {
+                        background-color: $black;
+                        color: $stroke;
+                    }
+
+                    .home__link:active {
+                        background-color: $grey-dark;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        width: 718px;
+        height: 656px;
+    }
+}
