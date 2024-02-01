@@ -1,3 +1,8 @@
+@import '../../styles/variables.scss';
+
 .homeLayout__content {
     min-height: calc(100vh - 266px);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
