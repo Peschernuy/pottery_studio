@@ -7,3 +7,8 @@ export { default as Loading } from "./Loading/Loading";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as OpenHours } from "./OpenHours/OpenHours";
 export { default as Shop } from "./Shop/Shop";
+export { default as FormInput } from "./FormInput/FormInput";
+export { default as CheckboxInput } from "./CheckboxInput/CheckboxInput";
+export { default as SubmitBtn } from "./SubmitBtn/SubmitBtn";
+export { default as GoogleSignInButton } from "./GoogleSignInButton/GoogleSignInButton";
+export { default as FacebookSignInButton } from "./FacebookSignInButton/FacebookSignInButton";

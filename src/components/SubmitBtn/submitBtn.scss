@@ -1,0 +1,18 @@
+@import "../../styles/styles.scss";
+
+.submit {
+    &__btn {
+        width: 346px;
+        height: 48px;
+        padding: 10px;
+        border: 1px solid $stroke;
+        background: $black;
+        color: $white;
+        font-family: $font-primary;
+        font-size: $subtitle;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        cursor: pointer;
+    }
+}

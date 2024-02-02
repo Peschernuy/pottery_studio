@@ -1,0 +1,71 @@
+@import "../../styles/styles.scss";
+
+.login {
+    &__container {
+        max-width: $desktop-width;
+        margin: 0 auto;
+        padding: 100px 0 120px 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form {
+        width: 346px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__header {
+        color: $black;
+        font-family: $font-secondary;
+        font-size: $title;
+        font-weight: 400;
+        line-height: 70px;
+    }
+    &__text {
+        color: $grey_dark;
+        font-family: $font-primary;
+        font-size: $subtitle;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 20px 0 20px 0;
+    }
+    &__additional-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        color: $grey-dark;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+    &__checkbox {
+        margin-bottom: 20px;
+    }
+    &__signIn {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 20px;
+        span::after {
+            content: "";
+            display: inline-block;
+            height: 1px;
+            width: 125px;
+            background-color: $grey_dark; 
+            margin: 3px 7px;
+        }
+    }
+    &__google-facebook{
+        display: flex;
+        flex-direction: column;
+    }
+}

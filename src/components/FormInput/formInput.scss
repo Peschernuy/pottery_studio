@@ -1,0 +1,15 @@
+@import "../../styles/styles.scss";
+
+.form {
+    &__control {
+        max-width: 346px;
+        width: 100%;
+    }
+    &__input {
+        max-width: 346px;
+        width: 100%;
+        border: 1px solid $grey-dark;  
+        padding: 15px 22px;
+        margin-bottom: 20px;
+    }
+}
