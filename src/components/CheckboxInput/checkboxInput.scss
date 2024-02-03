@@ -1,0 +1,21 @@
+@import "../../styles/styles.scss";
+
+.checkbox__control {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox__label {
+    font-family: $font-primary;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    color: $grey-dark;
+}
