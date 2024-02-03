@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import {
   FormInput,
   CheckboxInput,
@@ -17,11 +17,15 @@ const Login = () => {
     setRememberMeChecked(!rememberMeChecked);
   };
 
+  const loginAsGuestUser = () => {
+    console.log("login as guest user");
+  };
+
   return (
     <section className="login__container">
       <Form method="post" className="login__form">
-        <h4 className="login__header">Welcome back!</h4>
-        <p className="login__text">Log in to your account</p>
+        <h4 className="login__title">Welcome back!</h4>
+        <p className="login__subtitle">Log in to your account</p>
         <FormInput type="email" name="identifier" placeholder="email *" />
         <FormInput type="password" name="password" placeholder="password *" />
         <div className="login__additional-info">
@@ -35,9 +39,21 @@ const Login = () => {
           isChecked={rememberMeChecked}
           onChange={handleRememberMeChange}
         />
-        <SubmitBtn text="Sign in" />
+        <SubmitBtn className="login__signIn--btn" text="Sign in" />
+        <button className="login__guestUser" onClick={loginAsGuestUser}>
+          Guest user
+        </button>
+        <p className="login__notMember--text">
+          Not a member yet?
+          <Link
+            to="/register"
+            className="login__registerLink"
+          >
+            Register
+          </Link>
+        </p>
       </Form>
-      <p className="login__signIn">
+      <p className="login__signIn--text">
         <span></span>or Sign in with<span></span>
       </p>
       <div className="login__google-facebook">

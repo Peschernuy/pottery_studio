@@ -11,5 +11,14 @@
         border: 1px solid $grey-dark;  
         padding: 15px 22px;
         margin-bottom: 20px;
+        // &:required {
+        //     border-color: $grey-dark;  
+        // }
+        // &:invalid {
+        //     border-color: $red;  
+        // }
+        // &:focus:invalid {
+        //     border-color: $red; 
+        // }
     }
 }
