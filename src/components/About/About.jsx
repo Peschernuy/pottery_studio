@@ -1,11 +1,39 @@
-import './about.scss'
-
-
+import './about.scss';
+import foto_big_1 from '../../assets/images/about/foto_big_1.svg';
+import foto_big_2 from '../../assets/images/about/foto_big_2.svg';
+import foto_big_3 from '../../assets/images/about/foto_big_3.svg';
+import MyButton from '../UI/MyButton/MyButton';
+import Slider from './Slider/Slider';
+import { useState } from 'react';
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+    const bigImages = [foto_big_1, foto_big_2, foto_big_3];
+    const [selectedSlide, setSelectedSlide] = useState(0);
 
-export default About
+    console.log(selectedSlide);
+
+    return (
+        <section className="about">
+            <img src={bigImages[selectedSlide]} alt="" />
+            <div className="about__content">
+                <div className="about__title__content">
+                    <div className="about__title">
+                        <li>About</li>
+                        <span>About Studio</span>
+                    </div>
+                    <Slider selectedSlide={selectedSlide} setSelectedSlide={setSelectedSlide} />
+                </div>
+                <div className="about__body">
+                    <div>
+                        Welcome to our pottery studio, where creativity takes shape! Nestled in the
+                        heart of artistic expression, our studio is a haven for both beginners and
+                        seasoned potters alike.
+                    </div>
+                    <MyButton theme="light">more info</MyButton>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default About;
