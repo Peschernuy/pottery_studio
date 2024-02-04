@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
 
-    .footer__content {
+    .content {
         width: $desktop-width;
         padding: 0 91px;
         height: 146px;
@@ -19,7 +19,7 @@
         align-items: end;
         font: 400 14px/18px $font-primary;
         color: $white;
-        .footer__nav__hrefs {
+        .nav__hrefs {
             display: flex;
             height: 100%;
             flex-direction: column;
@@ -28,14 +28,14 @@
             a {
                 cursor: pointer;
                 transition: all 0.3s ease;
-            }
 
-            a:hover {
-                color: $background_2;
+                &:hover {
+                    color: $background_2;
+                }
             }
         }
 
-        .footer__logo {
+        .logo {
             display: flex;
             flex-direction: column;
             justify-content: space-between;

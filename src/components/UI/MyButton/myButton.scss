@@ -6,50 +6,40 @@
     cursor: pointer;
     transition: all 0.2s ease;
     font: $body-fw $subtitle $font-primary;
-}
 
-.my__btn:hover {
-    background-color: $black;
-    color: $stroke;
-}
+    &.light {
+        border: 1px solid $stroke;
+        color: $black;
+        background-color: $white;
 
-.my__btn:active {
-    background-color: $grey-dark;
-    color: $white;
-}
+        &:hover {
+            border: 1px solid $stroke;
+            color: $white;
+            background-color: $black;
+        }
 
-.light {
-    border: 1px solid $stroke;
-    color: $black;
-    background-color: $white;
-}
+        &:active {
+            border: 1px solid $white;
+            color: $white;
+            background-color: $grey-dark;
+        }
+    }
 
-.light:hover {
-    border: 1px solid $stroke;
-    color: $white;
-    background-color: $black;
-}
+    &.dark {
+        border: 1px solid $stroke;
+        color: $white;
+        background-color: $black;
 
-.light:active {
-    border: 1px solid $white;
-    color: $white;
-    background-color: $grey-dark;
-}
+        &:hover {
+            border: 1px solid $white;
+            color: $white;
+            background-color: $grey-dark;
+        }
 
-.dark {
-    border: 1px solid $stroke;
-    color: $white;
-    background-color: $black;
-}
-
-.dark:hover {
-    border: 1px solid $white;
-    color: $white;
-    background-color: $grey-dark;
-}
-
-.dark:active {
-    border: 1px solid $white;
-    color: $white;
-    background-color: $grey;
+        &:active {
+            border: 1px solid $white;
+            color: $white;
+            background-color: $grey;
+        }
+    }
 }

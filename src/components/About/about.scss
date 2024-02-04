@@ -10,17 +10,17 @@
         height: 832px;
     }
 
-    .about__content {
+    .content {
         display: flex;
         flex-direction: column;
         gap: 50px;
 
-        .about__title__content {
+        .title__content {
             display: flex;
             height: 356px;
             gap: 30px;
 
-            .about__title {
+            .title {
                 color: $black;
                 display: flex;
                 flex-direction: column;
@@ -42,12 +42,12 @@
                 }
             }
 
-            .about__slider {
+            .slider {
                 width: 50%;
                 height: 100%;
             }
         }
-        .about__body {
+        .body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;

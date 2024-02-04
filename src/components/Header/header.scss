@@ -4,35 +4,36 @@ header {
     background: $background_2;
     width: 100%;
     font-family: $font-primary;
+
+    .container {
+        width: $desktop-width;
+        padding: 0 91px;
+        height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        gap: 150px;
+
+        .logo {
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .btn img {
+            cursor: pointer;
+        }
+    }
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.header {
-    width: $desktop-width;
-    padding: 0 91px;
-    height: 88px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    gap: 150px;
-}
-
-.header__logo {
-    img {
-        cursor: pointer;
-    }
-}
-
-.header__btn img {
-    cursor: pointer;
-}
 
 @media screen and (max-width: $desktop-width) {
-    .header {
+    .container {
         width: 100%;
         display: flex;
         justify-content: space-between;

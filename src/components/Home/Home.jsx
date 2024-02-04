@@ -7,27 +7,26 @@ import MyButton from '../UI/MyButton/MyButton';
 const Home = () => {
     return (
         <section className="home">
-            <div className="home__content">
-                <div className="home__title">
-                    <div className="home__our__classes">
+            <div className="content">
+                <div className="title">
+                    <div className="our__classes">
                         <div>Our classes and courses are friendly everyone.</div>
                     </div>
-                    <div className="home__explore">Explore the Ancient Art</div>
+                    <div className="explore">Explore the Ancient Art</div>
                 </div>
-                <div className="home__body">
-                    <div className="home__item">
+                <div className="body">
+                    <div className="item">
                         <img src={hero_little_foto_default} alt="" />
                         <div>We are a Studio offering Pottery and Classes</div>
                     </div>
-                    <div className="home__go__to__shop">
+                    <div className="go__to__shop">
                         <div></div>
-                        <div className="home__go__to__shop__text">
+                        <div className="go__to__shop__text">
                             <div>
                                 Unleash your creativity in our pottery studio, offering inspiring
                                 classes and a curated shop.
                             </div>
                             <Link to="/products">
-                                {/* <div className="home__link">shop</div> */}
                                 <MyButton theme="light">shop</MyButton>
                             </Link>
                         </div>
