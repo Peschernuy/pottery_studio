@@ -21,7 +21,7 @@ const Navbar = () => {
                 <Link to="/products" className={location.pathname === '/products' ? 'active' : ''}>
                     SHOP
                 </Link>
-                <span className={location.pathname === '/products' && 'w-full'}></span>
+                <span className={location.pathname === '/products' ? 'w-full' : ''}></span>
             </div>
             <div>
                 <Link to="/">BOOK CLASSES</Link>

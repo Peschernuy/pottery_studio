@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.slider {
+    width: 252px;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 252px;
+        height: 312;
+        object-fit: cover;
+    }
+
+    .slider__selector {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        button {
+            font-size: 20px;
+            color: $stroke;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        button.active {
+            color: $grey-dark;
+        }
+    }
+}

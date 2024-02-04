@@ -2,6 +2,7 @@ import './home.scss';
 import hero_big_foto_default from '../../assets/images/home/hero_big_foto_default.svg';
 import hero_little_foto_default from '../../assets/images/home/hero_little_foto_default.svg';
 import { Link } from 'react-router-dom';
+import MyButton from '../UI/MyButton/MyButton';
 
 const Home = () => {
     return (
@@ -26,7 +27,8 @@ const Home = () => {
                                 classes and a curated shop.
                             </div>
                             <Link to="/products">
-                                <div className="home__link">shop</div>
+                                {/* <div className="home__link">shop</div> */}
+                                <MyButton theme="light">shop</MyButton>
                             </Link>
                         </div>
                     </div>

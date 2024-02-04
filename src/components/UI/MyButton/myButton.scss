@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.my__btn {
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font: $body-fw $subtitle $font-primary;
+}
+
+.my__btn:hover {
+    background-color: $black;
+    color: $stroke;
+}
+
+.my__btn:active {
+    background-color: $grey-dark;
+    color: $white;
+}
+
+.light {
+    border: 1px solid $stroke;
+    color: $black;
+    background-color: $white;
+}
+
+.light:hover {
+    border: 1px solid $stroke;
+    color: $white;
+    background-color: $black;
+}
+
+.light:active {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $grey-dark;
+}
+
+.dark {
+    border: 1px solid $stroke;
+    color: $white;
+    background-color: $black;
+}
+
+.dark:hover {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $grey-dark;
+}
+
+.dark:active {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $grey;
+}

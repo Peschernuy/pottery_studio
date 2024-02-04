@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.about {
+    display: flex;
+    gap: 120px;
+    padding-right: 91px;
+
+    img {
+        width: 534px;
+        height: 832px;
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .about__title__content {
+            display: flex;
+            height: 356px;
+            gap: 30px;
+
+            .about__title {
+                color: $black;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                width: 50%;
+
+                li {
+                    font-weight: $body-fw;
+                    font-size: $subtitle;
+                    list-style-type: disc;
+                    line-height: 22px;
+                }
+
+                span {
+                    font-weight: $body-fw;
+                    font-size: $title;
+                    line-height: 70px;
+                    font-style: italic;
+                }
+            }
+
+            .about__slider {
+                width: 50%;
+                height: 100%;
+            }
+        }
+        .about__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: $subtitle;
+            font-weight: $body-fw;
+            line-height: 22px;
+            width: 252px;
+            height: 216px;
+
+            * {
+                width: 100%;
+            }
+        }
+    }
+}
