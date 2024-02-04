@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 
     img {
         width: 252px;
@@ -14,7 +15,7 @@
         object-fit: cover;
     }
 
-    .slider__selector {
+    .selector {
         display: flex;
         justify-content: space-between;
         width: 60%;
@@ -24,10 +25,10 @@
             color: $stroke;
             cursor: pointer;
             transition: all 0.2s ease;
-        }
 
-        button.active {
-            color: $grey-dark;
+            &.active {
+                color: $grey-dark;
+            }
         }
     }
 }

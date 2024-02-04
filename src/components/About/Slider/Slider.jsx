@@ -11,7 +11,7 @@ const Slider = ({ selectedSlide, setSelectedSlide }) => {
     return (
         <div className="slider">
             <img src={littleImages[selectedSlide]} alt="" />
-            <div className="slider__selector">
+            <div className="selector">
                 <button
                     onClick={() => setSelectedSlide(0)}
                     className={selectedSlide === 0 ? 'active' : ''}>

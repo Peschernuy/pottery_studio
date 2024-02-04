@@ -24,16 +24,16 @@
             font-size: 12px;
             font-family: $font-primary;
             transition: all 0.1s ease;
-        }
 
-        a:hover {
-            color: $grey_dark;
-        }
+            &:hover {
+                color: $grey_dark;
+            }
 
-        .active {
-            font-weight: $head-b-fw;
-            color: $black;
-            cursor: auto;
+            &.active {
+                font-weight: $head-b-fw;
+                color: $black;
+                cursor: auto;
+            }
         }
     }
 }

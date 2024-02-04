@@ -5,19 +5,19 @@
     grid-template-columns: 4.5fr 5.5fr;
     gap: 32px;
 
-    .home__content {
+    .content {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         padding-top: 45px;
         padding-left: 91px;
 
-        .home__title {
+        .title {
             display: grid;
             grid-template-rows: 1fr 3fr;
             height: 242px;
 
-            .home__our__classes {
+            .our__classes {
                 font-weight: $body-fw;
                 font-size: 14px;
                 font-style: italic;
@@ -30,7 +30,7 @@
                 }
             }
 
-            .home__explore {
+            .explore {
                 font-weight: $body-fw;
                 font-size: $title_big;
                 color: $brown_dark;
@@ -38,12 +38,12 @@
                 letter-spacing: 4px;
             }
         }
-        .home__body {
+        .body {
             height: 248px;
             display: flex;
             justify-content: space-between;
 
-            .home__item {
+            .item {
                 width: 158px;
                 font-size: 14px;
                 font-family: $font-secondary;
@@ -55,12 +55,12 @@
                 }
             }
 
-            .home__go__to__shop {
+            .go__to__shop {
                 width: 252px;
                 display: grid;
                 grid-template-rows: 1fr 2fr;
 
-                .home__go__to__shop__text {
+                .go__to__shop__text {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;

@@ -15,15 +15,15 @@ const About = () => {
     return (
         <section className="about">
             <img src={bigImages[selectedSlide]} alt="" />
-            <div className="about__content">
-                <div className="about__title__content">
-                    <div className="about__title">
+            <div className="content">
+                <div className="title__content">
+                    <div className="title">
                         <li>About</li>
                         <span>About Studio</span>
                     </div>
                     <Slider selectedSlide={selectedSlide} setSelectedSlide={setSelectedSlide} />
                 </div>
-                <div className="about__body">
+                <div className="body">
                     <div>
                         Welcome to our pottery studio, where creativity takes shape! Nestled in the
                         heart of artistic expression, our studio is a haven for both beginners and
