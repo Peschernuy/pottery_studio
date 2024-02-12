@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.shop {
+    &__section {
+        display: grid;
+        grid-template-columns: 534px 252px 252px;
+        grid-gap: 30px;
+        align-items: flex-end;
+        background-color: $background_2;
+        padding: 40px 91px;
+        position: relative;
+    }
+    &__bigCup {
+        padding-top: 309px;
+    }
+    &__title {
+        color: $black;
+        font-family: $font-secondary;
+        font-size: $title;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 70px;
+        margin-bottom: 100px;
+    }
+    &__subtitle {
+        color: $grey_dark;
+        font-family: $font-primary;
+        font-size: $subtitle;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 36px;
+    }
+    &__inner {
+        &--img {
+            padding-top: 100px;
+        }
+    }
+    &__li {
+        position: absolute;
+        top: 102px;
+        right: 39%;
+        color: $black;
+        font-weight: $body-fw;
+        font-size: $subtitle;
+        list-style-type: disc;
+        line-height: 22px;
+    }
+}
