@@ -12,3 +12,4 @@ export { default as CheckboxInput } from "./CheckboxInput/CheckboxInput";
 export { default as SubmitBtn } from "./SubmitBtn/SubmitBtn";
 export { default as GoogleSignInButton } from "./GoogleSignInButton/GoogleSignInButton";
 export { default as FacebookSignInButton } from "./FacebookSignInButton/FacebookSignInButton";
+export { default as ItemContainer } from "./ItemContainer/ItemContainer";

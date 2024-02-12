@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+
+.itemContainer {
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    &__title {
+        color: $grey_dark;
+        font-family: $font-primary;
+        font-size: $body_bold;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    &__price{
+        color: $black;
+        font-family: $font-primary;
+        font-size: $body_bold;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
