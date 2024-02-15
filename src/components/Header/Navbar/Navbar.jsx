@@ -18,9 +18,7 @@ const Navbar = () => {
                 {/* <span className={location.pathname === '/about' && 'w-full'}></span> */}
             </div>
             <div>
-                <Link to="/products" className={location.pathname === '/products' ? 'active' : ''}>
-                    SHOP
-                </Link>
+                <Link to="/">SHOP</Link>
                 <span className={location.pathname === '/products' ? 'w-full' : ''}></span>
             </div>
             <div>

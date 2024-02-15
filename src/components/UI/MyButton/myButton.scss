@@ -42,4 +42,21 @@
             background-color: $grey;
         }
     }
+    &.transparent {
+        border: 1px solid $stroke;
+        color: $black;
+        background-color: transparent;
+
+        &:hover {
+            border: 1px solid $stroke;
+            color: $white;
+            background-color: $black;
+        }
+
+        &:active {
+            border: 1px solid $white;
+            color: $white;
+            background-color: $grey-dark;
+        }
+    }
 }
