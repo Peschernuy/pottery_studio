@@ -35,7 +35,7 @@ const Shop = () => {
           decorative pieces, all crafted by skilled artisans.
         </p>
         <Link to="/products">
-          <MyButton theme="light">more info</MyButton>
+          <MyButton theme="transparent">more info</MyButton>
         </Link>
         <ItemContainer
           src={smallCup2}
