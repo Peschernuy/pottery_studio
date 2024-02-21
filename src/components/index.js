@@ -1,5 +1,5 @@
 export { default as About } from "./About/About";
-export { default as BookClasses } from "./BookClasses/BookClasses";
+export { default as BookClasses } from "./BookClassesVideo/BookClassesVideo";
 export { default as Footer } from "./Footer/Footer";
 export { default as Header } from "./Header/Header";
 export { default as Home } from "./Home/Home";
@@ -13,3 +13,4 @@ export { default as SubmitBtn } from "./SubmitBtn/SubmitBtn";
 export { default as GoogleSignInButton } from "./GoogleSignInButton/GoogleSignInButton";
 export { default as FacebookSignInButton } from "./FacebookSignInButton/FacebookSignInButton";
 export { default as ItemContainer } from "./ItemContainer/ItemContainer";
+export { default as Modal } from "./VideoModal/VideoModal";
