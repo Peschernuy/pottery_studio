@@ -1,5 +1,7 @@
 export { default as About } from "./About/About";
-export { default as BookClasses } from "./BookClassesVideo/BookClassesVideo";
+export { default as BookClassesVideo } from "./BookClassesVideo/BookClassesVideo";
+export { default as BookClassesWheel } from "./BookClassesWheel/BookClassesWheel";
+export { default as BookClassesInfo } from "./BookClassesInfo/BookClassesInfo";
 export { default as Footer } from "./Footer/Footer";
 export { default as Header } from "./Header/Header";
 export { default as Home } from "./Home/Home";

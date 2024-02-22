@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.bookInfo {
+    &__section {
+        padding: 0 91px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__inner {
+        width: 365px;
+        margin-left: 350px;
+    }
+    &__li {
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+    &__title {
+        color: $black;
+        font-family: $font-secondary;
+        font-size: $title;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 70px;
+        margin-bottom: 44px;
+    }
+    &__text--1 {
+        width: 252px;
+        color: $grey_dark;
+        font-family: $font-primary;
+        font-size: $subtitle;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 36px;
+    }
+    &__text--2 {
+        width: 252px;
+        color: $grey_dark;
+        font-family: $font-primary;
+        font-size: $subtitle;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 36px;
+    }
+}
