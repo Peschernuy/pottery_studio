@@ -2,7 +2,9 @@ import {
   Home,
   About,
   Shop,
-  BookClasses,
+  BookClassesVideo,
+  BookClassesWheel,
+  BookClassesInfo,
   OpenHours,
   Contacts,
 } from "../../components";
@@ -14,7 +16,9 @@ const Landing = () => {
       <Home />
       <About />
       <Shop />
-      <BookClasses />
+      <BookClassesVideo />
+      <BookClassesWheel />
+      <BookClassesInfo />
       <OpenHours />
       <Contacts />
     </>
