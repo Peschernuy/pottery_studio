@@ -6,7 +6,7 @@ const Navbar = () => {
     const location = useLocation();
 
     return (
-        <nav className="navbar">
+        <nav className="navbar__container">
             <div>
                 <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
                     HOME

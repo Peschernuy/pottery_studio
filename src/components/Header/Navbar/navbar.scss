@@ -1,38 +1,40 @@
 @import '../../../styles/variables';
 
 .navbar {
-    width: 618px;
-    display: flex;
-    justify-content: center;
-
-    div {
+    &__container {
+        width: 618px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4px 10px;
+        justify-content: center;
 
-        span {
-            transition: all 0.1s ease;
-            height: 1px;
-            background-color: $black;
-        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px 10px;
 
-        a {
-            text-decoration: none;
-            color: $black;
-            font-weight: $body-fw;
-            font-size: 12px;
-            font-family: $font-primary;
-            transition: all 0.1s ease;
-
-            &:hover {
-                color: $grey_dark;
+            span {
+                transition: all 0.1s ease;
+                height: 1px;
+                background-color: $black;
             }
 
-            &.active {
-                font-weight: $head-b-fw;
+            a {
+                text-decoration: none;
                 color: $black;
-                cursor: auto;
+                font-weight: $body-fw;
+                font-size: 12px;
+                font-family: $font-primary;
+                transition: all 0.1s ease;
+
+                &:hover {
+                    color: $grey_dark;
+                }
+
+                &.active {
+                    font-weight: $head-b-fw;
+                    color: $black;
+                    cursor: auto;
+                }
             }
         }
     }
