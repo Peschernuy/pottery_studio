@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header>
-            <div className="container">
-                <Link to={'/'} className="logo">
+        <header className="header">
+            <div className="header__container">
+                <Link to={'/'} className="header__logo">
                     <img src={logoHeader} alt="" />
                 </Link>
                 <Navbar />
-                <div className="btn">
+                <div className="header__btn">
                     <img src={btnSearch} alt="" />
                     <Link to={'/login'}>
                         <img src={btnlogin} alt="" />

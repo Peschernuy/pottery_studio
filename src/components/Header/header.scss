@@ -1,11 +1,11 @@
 @import '../../styles/variables';
 
-header {
+.header {
     background: $background_2;
     width: 100%;
     font-family: $font-primary;
 
-    .container {
+    &__container {
         width: $desktop-width;
         padding: 0 91px;
         height: 88px;
@@ -14,16 +14,16 @@ header {
         align-items: center;
         margin: 0 auto;
         gap: 150px;
+    }
 
-        .logo {
-            img {
-                cursor: pointer;
-            }
-        }
-
-        .btn img {
+    &__logo {
+        img {
             cursor: pointer;
         }
+    }
+
+    &__btn img {
+        cursor: pointer;
     }
 }
 * {
@@ -33,7 +33,7 @@ header {
 }
 
 @media screen and (max-width: $desktop-width) {
-    .container {
+    .header__container {
         width: 100%;
         display: flex;
         justify-content: space-between;

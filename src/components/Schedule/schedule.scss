@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.open__hours {
+    &__section {
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__body {
+        display: grid;
+        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

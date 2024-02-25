@@ -1,0 +1,38 @@
+@import '../../../styles/variables';
+
+.foto__switch__button {
+    cursor: pointer;
+    border-top: 1px solid $grey_light;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-secondary;
+    color: $grey_light;
+    width: 534px;
+    padding: 20px 0;
+
+    &__last {
+        border-bottom: 1px solid $grey_light;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__number {
+        padding: 0 16px;
+        font-size: 12px;
+        font-family: $font-primary;
+        height: 100%;
+    }
+
+    &__active {
+        border-top: 2px solid $black;
+        color: $black;
+    }
+
+    &__title {
+        font-size: $title;
+    }
+}
