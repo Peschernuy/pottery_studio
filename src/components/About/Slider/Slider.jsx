@@ -1,13 +1,7 @@
 import React from 'react';
 import './slider.scss';
 
-import foto_little_1 from '../../../assets/images/about/slider/foto_little_1.svg';
-import foto_little_2 from '../../../assets/images/about/slider/foto_little_2.svg';
-import foto_little_3 from '../../../assets/images/about/slider/foto_little_3.svg';
-
-const littleImages = [foto_little_1, foto_little_2, foto_little_3];
-
-const Slider = ({ selectedSlide, setSelectedSlide }) => {
+const Slider = ({ selectedSlide, setSelectedSlide, littleImages }) => {
     return (
         <div className="slider">
             <img src={littleImages[selectedSlide]} alt="" />
