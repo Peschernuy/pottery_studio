@@ -10,8 +10,8 @@
     }
 
     &__body {
-        display: grid;
-        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }

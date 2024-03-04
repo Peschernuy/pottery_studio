@@ -11,6 +11,7 @@
     color: $grey_light;
     width: 534px;
     padding: 20px 0;
+    box-sizing: content-box;
 
     &__last {
         border-bottom: 1px solid $grey_light;

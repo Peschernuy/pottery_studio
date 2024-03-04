@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.open__hours {
+    &__section {
+        display: flex;
+        padding-right: 91px;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+
+        &__title {
+            display: flex;
+            gap: 90px;
+
+            &__hours {
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+            }
+
+            span {
+                font-family: $font-secondary;
+                font-size: $title;
+                font-style: italic;
+                color: $black;
+            }
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 36px;
+        }
+    }
+}

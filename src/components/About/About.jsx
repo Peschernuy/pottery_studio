@@ -2,12 +2,17 @@ import './about.scss';
 import foto_big_1 from '../../assets/images/about/foto_big_1.svg';
 import foto_big_2 from '../../assets/images/about/foto_big_2.svg';
 import foto_big_3 from '../../assets/images/about/foto_big_3.svg';
+import foto_little_1 from '../../assets/images/about/slider/foto_little_1.svg';
+import foto_little_2 from '../../assets/images/about/slider/foto_little_2.svg';
+import foto_little_3 from '../../assets/images/about/slider/foto_little_3.svg';
 import MyButton from '../UI/MyButton/MyButton';
 import Slider from './Slider/Slider';
 import { useState } from 'react';
 
 const About = () => {
     const bigImages = [foto_big_1, foto_big_2, foto_big_3];
+    const littleImages = [foto_little_1, foto_little_2, foto_little_3];
+
     const [selectedSlide, setSelectedSlide] = useState(0);
 
     console.log(selectedSlide);
@@ -21,7 +26,11 @@ const About = () => {
                         <li>About</li>
                         <span>About Studio</span>
                     </div>
-                    <Slider selectedSlide={selectedSlide} setSelectedSlide={setSelectedSlide} />
+                    <Slider
+                        selectedSlide={selectedSlide}
+                        setSelectedSlide={setSelectedSlide}
+                        littleImages={littleImages}
+                    />
                 </div>
                 <div className="body">
                     <div>
