@@ -1,3 +1,5 @@
+export { default as About } from "./About/About";
+export { default as BookClasses } from "./BookClasses/BookClasses";
 export { default as Cart } from "./Cart/Cart";
 export { default as Error } from "./Error/Error";
 export { default as HomeLayout } from "./HomeLayout/HomeLayout";

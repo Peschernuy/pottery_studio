@@ -14,16 +14,16 @@ const Navbar = () => {
                 <span className={location.pathname === '/' ? 'w-full' : ''}></span>
             </div>
             <div>
-                <Link to="/">ABOUT</Link>
-                {/* <span className={location.pathname === '/about' && 'w-full'}></span> */}
+                <Link to="/about">ABOUT</Link>
+                <span className={location.pathname === '/about' && 'w-full'}></span>
             </div>
             <div>
                 <Link to="/">SHOP</Link>
                 <span className={location.pathname === '/products' ? 'w-full' : ''}></span>
             </div>
             <div>
-                <Link to="/">BOOK CLASSES</Link>
-                {/* <span className={location.pathname === 's' && 'w-full'}></span> */}
+                <Link to="/bookClasses">BOOK CLASSES</Link>
+                <span className={location.pathname === '/bookClasses' && 'w-full'}></span>
             </div>
             <div>
                 <Link to="/">OPEN HOURS</Link>
