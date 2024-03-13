@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.help {
+    &__section {
+        padding: 40px 91px;
+        background-color: $background_2;
+        width: 1098px;
+        display: flex;
+     
+        gap: 192px;
+    }
+
+    &__info {
+        width: 358px;
+        h1 {
+            color: $black;
+            font-family: $font-secondary;
+            font-size: $title;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 70px;
+            margin-bottom: 40px;
+        }
+        p {
+            color: $grey_dark;
+            font-family: $font-primary;
+            font-size: $subtitle;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 40px;
+        }
+    }
+    &__form {
+        width: 346px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 74px;
+        input,
+        textarea {
+          background-color:$white;
+        }
+    }
+}

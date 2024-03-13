@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .book-classes {
-    padding: 100px 91px;
+    padding: 100px 91px 0 91px;
 
     &__intro,
     &__explore {
@@ -84,9 +84,15 @@
             width: 252px;
         }
     }
-    .open__hours{
-        &__section{
-            margin-left: -91px;
+    .open__hours {
+        &__section {
+            margin-top: -100px;
+            margin-bottom: 100px;
+            width: 1098px;
+            gap: 104px;
+        }
+        &__content__title{
+            gap: 30px;
         }
     }
 }

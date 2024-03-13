@@ -4,9 +4,10 @@ export { default as BookClassesWheel } from "./BookClassesWheel/BookClassesWheel
 export { default as BookClassesInfo } from "./BookClassesInfo/BookClassesInfo";
 export { default as Footer } from "./Footer/Footer";
 export { default as Header } from "./Header/Header";
+export { default as Help } from "./Help/Help";
 export { default as Home } from "./Home/Home";
 export { default as Loading } from "./Loading/Loading";
-export { default as Contacts } from "./Contacts/Contacts";
+export { default as Instagram } from "./Instagram/Instagram";
 export { default as OpenHours } from "./OpenHours/OpenHours";
 export { default as Shop } from "./Shop/Shop";
 export { default as FormInput } from "./FormInput/FormInput";

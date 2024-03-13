@@ -7,7 +7,7 @@ import smallImg5 from "../../assets/images/bookClasses/small5.png";
 import bigImg1 from "../../assets/images/bookClasses/big1.png";
 import bigImg2 from "../../assets/images/bookClasses/big2.png";
 import bigImg3 from "../../assets/images/bookClasses/big3.png";
-import { OpenHours } from "../../components";
+import { Help, OpenHours } from "../../components";
 
 import ItemContainer from "../../components/ItemContainer/ItemContainer";
 
@@ -120,6 +120,7 @@ const BookClasses = () => {
         </div>
       </div>
       <OpenHours />
+      <Help />
     </section>
   );
 };
