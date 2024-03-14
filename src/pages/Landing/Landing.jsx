@@ -6,7 +6,7 @@ import {
     BookClassesWheel,
     BookClassesInfo,
     OpenHours,
-    Contacts,
+    Instagram,
 } from '../../components';
 import Schedule from '../../components/Schedule/Schedule';
 import './landing.scss';
@@ -22,7 +22,7 @@ const Landing = () => {
             <BookClassesInfo />
             <Schedule />
             <OpenHours />
-            <Contacts />
+            <Instagram />
         </>
     );
 };

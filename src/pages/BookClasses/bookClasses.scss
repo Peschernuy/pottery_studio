@@ -1,0 +1,98 @@
+@import "../../styles/variables";
+
+.book-classes {
+    padding: 100px 91px 0 91px;
+
+    &__intro,
+    &__explore {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+    &__choose {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 100px;
+        li {
+            margin: 0 0 153px 5px;
+        }
+    }
+
+    &__intro-content,
+    &__choose-content,
+    &__explore-content {
+        width: 252px;
+
+        li {
+            margin: 0 0 36px 5px;
+        }
+
+        h1,
+        h2 {
+            color: $black;
+            font-family: $font-secondary;
+            font-size: $title;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 70px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            color: $grey_dark_60;
+            font-family: $font-primary;
+            font-size: $subtitle;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__intro-content {
+        p {
+            color: $grey_dark;
+            font-size: $body_bold;
+        }
+
+        h1 {
+            margin-bottom: 195px;
+        }
+    }
+
+    &__explore-content {
+        p:last-child {
+            margin-bottom: 124px;
+        }
+    }
+    &__explore-text {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 534px;
+
+        p {
+            width: 252px;
+        }
+    }
+    &__choose-products,
+    &__explore-products {
+        display: flex;
+        gap: 30px;
+
+        .itemContainer__container {
+            width: 252px;
+        }
+    }
+    .open__hours {
+        &__section {
+            margin-top: -100px;
+            margin-bottom: 100px;
+            width: 1098px;
+            gap: 104px;
+        }
+        &__content__title{
+            gap: 30px;
+        }
+    }
+}

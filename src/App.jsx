@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./styles/styles.scss";
 import {
+  About,
+  BookClasses,
   Cart,
   Checkout,
   Error,
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "bookClasses",
+        element: <BookClasses />,
       },
       {
         path: "products",
