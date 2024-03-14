@@ -6,12 +6,12 @@
         background-color: $background_2;
         width: 1098px;
         display: flex;
-     
         gap: 192px;
     }
 
     &__info {
         width: 358px;
+
         h1 {
             color: $black;
             font-family: $font-secondary;
@@ -35,10 +35,55 @@
         width: 346px;
         display: flex;
         flex-direction: column;
-        padding-top: 74px;
+        padding-top: 100px;
         input,
         textarea {
-          background-color:$white;
+            background-color: $white;
+            margin-bottom: 24px;
+            padding: 10px 22px;
+            color: $grey_dark;
+            font-family: $font-primary;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        textarea {
+            height: 100px;
+        }
+    }
+    &__phone {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 20px !important;
+        &:before {
+            content: "";
+            background-image: url(../../assets/images/icons/phone.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__mail {
+        position: relative;
+        padding-left: 30px;
+        margin-top: -20px !important;
+        &:before {
+            content: "";
+            background-image: url(../../assets/images/icons/mail.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
         }
     }
 }

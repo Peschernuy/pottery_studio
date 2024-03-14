@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./help.scss";
+import SubmitBtn from "../SubmitBtn/SubmitBtn";
+import phone from '../../assets/images/icons/phone.svg'
+import mail from '../../assets/images/icons/mail.svg'
 
 const Help = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +21,45 @@ const Help = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.request
+    ) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+    fetch("/api/help", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Your request has been submitted successfully.");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            request: "",
+          });
+        } else {
+          alert(
+            "There was an error submitting your request. Please try again later."
+          );
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        alert(
+          "There was an error submitting your request. Please try again later."
+        );
+      });
   };
   return (
     <section className="help__section">
@@ -33,49 +74,54 @@ const Help = () => {
           If you have any questions or need help, you may contact us to assist
           you.
         </p>
-        <p>+ 12 345 432 324</p>
+        <p className="help__phone">+ 12 345 432 324</p>
         <p>
           Mon-Fri: 8am - 6pm
           <br /> Sat: 10am - 6pm
         </p>
-        <p>Email us 24/7</p>
+        <p className="help__mail">Email us 24/7</p>
       </div>
       <form className="help__form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
         <input
+          placeholder="Name*"
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
+          required
+          aria-label="Name"
         />
 
-        <label htmlFor="email">Email*</label>
         <input
+          placeholder="Email*"
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           required
+          aria-label="Email"
         />
 
-        <label htmlFor="phone">Phone*</label>
         <input
+          placeholder="Phone*"
           type="tel"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
           required
+          aria-label="Phone"
         />
 
-        <label htmlFor="request">Your request*</label>
         <textarea
+          placeholder="Your request*"
           name="request"
           value={formData.request}
           onChange={handleChange}
           required
+          aria-label="Your request"
         ></textarea>
 
-        <button type="submit">Submit</button>
+        <SubmitBtn onClick={handleSubmit} text="Send" />
       </form>
     </section>
   );
