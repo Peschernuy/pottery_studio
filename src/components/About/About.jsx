@@ -6,7 +6,7 @@ import foto_little_1 from '../../assets/images/about/slider/foto_little_1.svg';
 import foto_little_2 from '../../assets/images/about/slider/foto_little_2.svg';
 import foto_little_3 from '../../assets/images/about/slider/foto_little_3.svg';
 import MyButton from '../UI/MyButton/MyButton';
-import Slider from './Slider/Slider';
+import Slider from '../UI/Slider/Slider';
 import { useState } from 'react';
 
 const About = () => {
@@ -14,8 +14,6 @@ const About = () => {
     const littleImages = [foto_little_1, foto_little_2, foto_little_3];
 
     const [selectedSlide, setSelectedSlide] = useState(0);
-
-    console.log(selectedSlide);
 
     return (
         <section className="about">

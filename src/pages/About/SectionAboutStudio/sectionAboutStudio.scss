@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.about__studio {
+    display: flex;
+    gap: 125px;
+    padding-right: 91px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            span {
+                font-family: $font-secondary;
+                color: $black;
+                font-style: italic;
+                font-size: $title;
+            }
+        }
+    }
+}

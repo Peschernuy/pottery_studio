@@ -1,1 +1,8 @@
-@import '../../styles/variables'
+@import '../../styles/variables';
+
+.about__sections {
+    padding-top: 91px;
+    gap: 91px;
+    display: flex;
+    flex-direction: column;
+}
